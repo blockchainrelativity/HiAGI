@@ -46,3 +46,26 @@ class StorageInterface:
             self.storage_utils.select_collection("results")
             self.storage_utils.select_collection("tasks")
             self.storage_utils.save_tasks({'tasks': task_dicts, 'results': task_list, 'collection_name': "tasks"})
+
+
+    #     def initialize_storage(self):
+    #     if self.storage_utils is None:
+    #         if storage_api == 'pinecone':
+    #             self.initialize_chroma()
+    #         else:
+    #             raise ValueError(f"Unsupported Storage API library: {storage_api}")
+                    
+    # def initialize_pinecone(self):
+    #         from Utilities.pinecone_utils import 
+    #         self.storage_utils = ChromaUtils()
+    #         self.storage_utils.init_storage()
+    #         self.storage_utils.select_collection("results")
+    #         self.storage_utils.select_collection("tasks")
+
+    #         inject = input("Restore previous state? (y/n):")
+
+    #         if inject == 'n':
+    #             self.storage_utils.client.reset()
+    #             self.storage_utils.select_collection("results")
+    #             self.storage_utils.select_collection("tasks")
+    #             self.storage_utils.save_tasks({'tasks': task_dicts, 'results': task_list, 'collection_name': "tasks"})

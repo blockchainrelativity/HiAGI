@@ -1,10 +1,13 @@
 {
   "Name": "EMF",
-  "Objective": "Write a program for an AI to use to search the internet.",
+  "Objective": "Build a dashboard website that takes inspirations from an image file to produce a beautiful interactive website for its community.",
   "Tasks": [
+    "Review image in file to be used as the framework for website",
+    "Review intention of the design and user flow, optimize from that where needed",
     "Develop a task list",
     "Reflect on the task list",
-    "Act out the task list"
+    "Act out the task list",
+    "Produce an html file to show this new website additionally"
   ],
   "ExecutionAgent": {
     "API": "openai_api",
